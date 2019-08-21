@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Exercicio 05 </title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var usuarios = [
+        {
+          nome: 'Henrique',
+          habilidades: ['javascript', 'ReactJS', 'React Native']
+        },
+        {
+          nome: 'Claudio',
+          habilidades: ['VueJS', 'Ruby on Rails', 'Elixir']
+        }
+      ];
+
+      function mostrar(usuarios){
+        //percorre o vetor do objeto
+        for (var i = 0; i < usuarios.length; i++){
+          var texto = "O " +usuarios[i].nome;
+          //percorre o vetor de habilidades
+          for (var j = 0; j < usuarios[i].habilidades.length; j++){
+            if (j == 0){
+              texto += " possui habilidades: " +usuarios[i].habilidades[j];
+            }
+            else {
+              texto += ", " +usuarios[i].habilidades[j];
+            }
+          }
+          console.log(texto);
+        }
+      }
+
+      mostrar(usuarios);
+
+    </script>
+  </body>
+</html>

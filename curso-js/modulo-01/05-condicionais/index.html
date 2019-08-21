@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Funções </title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      function retornaSexo(sexo){
+
+        /*
+        //=== compara se os valores das variaveis são iguais e se o tipo da variavel é igual
+        if (sexo === 'M'){
+          return 'Masculino';
+        }
+        else if (sexo === 'F'){
+          return 'Feminino';
+        }
+        else {
+          return 'Outro';
+        }
+        */
+
+        //switch case é utilizado quando é preciso verificar a igualdade de uma variavel multiplas vezes
+        switch (sexo) {
+          case 'M':
+              return 'Masculino';
+            case 'F':
+              return 'Feminino';
+            break;
+          default:
+            return 'Outro';
+
+        }
+      };
+
+      console.log(retornaSexo('M'));
+    </script>
+  </body>
+</html>

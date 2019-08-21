@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Operadores Logicos </title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      function sexoIdade(sexo, idade){
+        var sexo;
+        var idade;
+
+        if (sexo === 'M'){
+          sexo = 'Masculino';
+        }
+        else{
+          sexo = 'Feminino';
+        }
+
+        if (idade >= 18){
+          idade = 'maior';
+        }
+        else{
+          idade = 'menor'
+        }
+
+        console.log('Você é do sexo ' +sexo+ ' e é ' +idade+ ' de idade');
+      }
+
+      sexoIdade('M', 19);
+    </script>
+  </body>
+</html>

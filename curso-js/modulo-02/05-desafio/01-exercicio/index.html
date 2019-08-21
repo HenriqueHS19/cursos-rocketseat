@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Exercicio 01 </title>
+  </head>
+  <body>
+    <div class="container">
+        <button type="button" name="btnAdicionar"> Adicionar </button>
+    </div>
+
+    <script type="text/javascript">
+      var container = document.querySelector('.container');
+      var btnAdicionar = document.querySelector('.container button[name = btnAdicionar]');
+
+      btnAdicionar.onclick = function(){
+        var quadrado = document.createElement('div');
+        quadrado.style.width = '100px';
+        quadrado.style.height = '100px';
+        quadrado.style.backgroundColor = 'red';
+        container.appendChild(quadrado);
+      }
+    </script>
+  </body>
+</html>

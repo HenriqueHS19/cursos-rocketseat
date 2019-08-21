@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Lidando com elementos </title>
+  </head>
+  <body>
+    <div class="container">
+      <input type="text" name="input" value="">
+    </div>
+
+    <script type="text/javascript">
+      var link = document.createElement('a');
+      link.setAttribute('href', 'https://google.com');
+      var text = document.createTextNode('Google');
+      link.appendChild(text);
+
+      var container = document.querySelector('.container');
+      container.appendChild(link);
+
+      container.removeChild(document.querySelector('.container input[name = input]'));
+
+    </script>
+  </body>
+</html>

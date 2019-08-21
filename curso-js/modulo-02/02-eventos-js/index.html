@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Eventos JS </title>
+  </head>
+  <body>
+    <div class="app">
+      <input type="text" name="txtValue" value="" />
+      <button type="button" name="btnAdicionar"> Adicionar </button>
+    </div>
+
+    <script type="text/javascript">
+      var txtValue = document.querySelector(".app input[name = txtValue]");
+      var btnAdicionar = document.querySelector(".app button[name = btnAdicionar]");
+
+      btnAdicionar.onclick = function(){
+        alert(txtValue.value);
+      };
+
+    </script>
+  </body>
+</html>

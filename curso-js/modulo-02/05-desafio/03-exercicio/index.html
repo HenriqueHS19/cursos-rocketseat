@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Exercicio 03 </title>
+  </head>
+  <body>
+    <div class="container">
+      <ul class="list">
+
+      </ul>
+    </div>
+
+    <script type="text/javascript">
+      var nomes = ['Henrique', 'Claudio', 'Daniel'];
+      var list = document.querySelector('.container .list');
+
+      for (var i = 0; i < nomes.length; i++){
+        var li = document.createElement('li');
+        li.appendChild(document.createTextNode(nomes[i]));
+        list.appendChild(li);
+      }
+
+    </script>
+
+  </body>
+</html>

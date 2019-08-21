@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Interval e Timeout</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+      var i = 0;
+      function incrementa(){
+        console.log(i++);
+      }
+
+      function teste(){
+        console.log("Timeout");
+      }
+
+      //interval é uma função que é excutada varias vezes dentro de um intervalo
+      //A função "incrementa" vai ser passada como parametro a cada 1s. Por isso não se coloca o "()"
+      setInterval(incrementa, 1000);
+
+      //Timeout vai executar a função apenas uma vez, porem com um delay até executa-la
+      setTimeout(teste, 5000);
+
+    </script>
+  </body>
+</html>

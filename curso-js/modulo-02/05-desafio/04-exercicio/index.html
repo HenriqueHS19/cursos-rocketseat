@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Exercicio 04 </title>
+  </head>
+  <body>
+    <div class="container">
+      <input type="text" name="txtNome" value="">
+      <button type="button" name="btnAdicionar"> Adicionar </button>
+
+      <ul>
+
+      </ul>
+    </div>
+
+    <script type="text/javascript">
+      var txtNome = document.querySelector('.container input[name = txtNome]');
+      var btnAdicionar = document.querySelector('.container button[name = btnAdicionar]');
+      var list = document.querySelector('.container ul');
+
+      btnAdicionar.onclick = function(){
+          var li = document.createElement('li');
+          li.appendChild(document.createTextNode(txtNome.value));
+          list.appendChild(li);
+          txtNome.value = '';
+      }
+
+    </script>
+
+  </body>
+</html>
